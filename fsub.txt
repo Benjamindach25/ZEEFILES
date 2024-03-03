@@ -3,5 +3,3 @@
 #chat_id, invite_link
 
 -1002090944789, https://t.me/+V1pm5VFDX081MzUx
--1002053921638, https://t.me/+6MQ9muy4JpkxMDJh
--1002004319898, https://t.me/+qtRUFnYIe7I4ZTEx
