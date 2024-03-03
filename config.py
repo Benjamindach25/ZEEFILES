@@ -13,16 +13,16 @@ from logging.handlers import RotatingFileHandler
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6578048843:AAEM1juYGg18wMBVoSS00KbThZLjHsNvUJ8")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("API_ID", "1522127"))
+APP_ID = int(os.environ.get("API_ID", "14838714"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "1252ffe16baf341bfd7236f92df76b0e")
+API_HASH = os.environ.get("API_HASH", "ace6dafd5da1eb51ca6a10cb48dcab96")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002095725381"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002007172657"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "1006159057"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6949902115"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
@@ -47,7 +47,7 @@ except ValueError:
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 
 #set True if you want to prevent users from forwarding files from bot
-PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
+PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" else False
 
 #Set true if you want Disable your Channel Posts Share button
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
