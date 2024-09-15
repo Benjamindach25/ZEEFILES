@@ -10,35 +10,35 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7308514272:AAFtR44QaW4tXf2jhm_OWroyi5Nq9yKvIjM")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("API_ID", "14838714"))
+APP_ID = int(os.environ.get("API_ID", "21113240"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "ace6dafd5da1eb51ca6a10cb48dcab96")
+API_HASH = os.environ.get("API_HASH", "cf60d4f8ad97d15080c0252d9af22321")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002007172657"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002402052598"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "6949902115"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6824677167"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://maya:maya@maya.kweokda.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DATABASE_NAME", "mayava")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://maya:maya@cluster0.m5qsz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_NAME = os.environ.get("DATABASE_NAME", "maya")
 
 
-TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "2"))
+TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "1"))
 
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "849970787").split()):
+    for x in (os.environ.get("ADMINS", "6824677167").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -56,7 +56,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(849970787)
+ADMINS.append(6824677167)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
